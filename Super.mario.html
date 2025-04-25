@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullskjerm Video med Undertekster</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Fyller skjermen uten å endre forholdet */
+        }
+        .watermark {
+            position: absolute;
+            top: 10px; /* Juster vertikal posisjon */
+            right: 10px; /* Juster horisontal posisjon */
+        }
+    </style>
+</head>
+<body>
+
+    <video controls>
+        <source src="https://archive.org/download/the.-super.-mario.-bros..-movie.-2023.-repack.-1080p.-webrip.x-264.-aac-5.1-yts.-mx/The.Super.Mario.Bros..Movie.2023.REPACK.1080p.WEBRip.x264.AAC5.1-%5BYTS.MX%5D.mp4" type="video/mp4">
+        <track src="C:\Users\svears14\AppData\Local\Temp\d304ee24-994c-4c5c-bc67-11507264af61_SUBDL__the-boxtrolls-norwegian-3064810.zip.f61\The.Boxtrolls.2014.WEBRip.iTunes.srt" kind="subtitles" srclang="no" label="Norsk" default>
+        Din nettleser støtter ikke video-taggen.
+    </video>
+    <img src="c:\Users\svears14\Downloads\Watch Logo W.png" alt="Vannmerke" class="watermark" width="50">
+</body>
+</html>

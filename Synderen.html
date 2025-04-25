@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synderen</title>
+    <style>
+        body {
+            background-color: #091c1f; /* Mørk bakgrunnsfarge for hele siden */
+            margin: 0; /* Fjerner standard margin */
+            font-family: Arial, sans-serif; /* Setter skrifttype */
+            overflow-x: hidden; /* Hindrer horisontal rulling */
+        }
+
+        header {
+            position: fixed; /* Fikserer headeren til toppen av siden */
+            top: 0; /* Plasserer headeren øverst */
+            left: 0; /* Plasserer headeren til venstre */
+            width: 100%; /* Fyller hele bredden */
+            display: flex; /* Bruker flexbox for layout av header */
+            align-items: center; /* Justerer innholdet vertikalt */
+            position: fixed; /* Fikserer headeren til toppen av siden */
+            top: 0; /* Plasserer headeren øverst */
+            left: 10; /* Plasserer headeren til venstre */
+            width: 100%; /* Fyller hele bredden */
+            display: flex; /* Bruker flexbox for layout av header */
+            align-items: center; /* Justerer innholdet vertikalt */
+            padding: 20px 10px; /* Innvendig avstand i header */
+            background-color: None; /* Gjennomsiktig bakgrunn for fade-effekt */
+            color: white; /* Hvit tekstfarge */
+            z-index: 1000; /* Sørger for at headeren er over annet innhold */
+        }
+
+        .logo {
+            width: 150px; /* Bredde på logoen */
+            height: auto; /* Bevarer høyde-bredde-forholdet */
+            left: 20px;
+            margin-right: 30px; /* Avstand mellom logoen og navigasjonen */
+            position: relative; /* Gjør logoen uavhengig av andre elementer */
+            z-index: 1001; /* Sørger for at logoen er over headeren */
+        }
+        nav a {
+            margin-left: 20px; /* Avstand mellom navigasjonslenkene */
+            color: white; /* Hvit tekstfarge for lenkene */
+            text-decoration: none; /* Fjerner understreking på lenkene */
+            transition: all 0.3s ease; /* Animasjon for overgangseffekten */
+        }
+        nav a:hover,
+        nav a:active {
+            color: #00FFCC; /* Endrer farge på lenkene ved hover */
+        }
+
+         </style>
+
+
+</head>
+<body>
+    <header>
+        <img src="c:\Users\svears14\Downloads\Watch 2025_edited_edited.png" alt="Watch Logo" class="logo">
+        <nav>
+            <a href="index.html">Startsiden</a>
+            <a href="Filmer">Filmer</a>
+            <a href="Serier">Serier</a>
+            <a href="Min liste">Min liste</a>
+        </nav>
+    </form>
+        
+    </header>
+
+
+<main>
+    <!-- Innholdet på siden går her -->
+</main>
+
+
+
+
+<div class="innhold">
+    <div class="fixed-content"></div>
+    
+</div>
+
+<main>
+    <section id="home">
+       
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bildegalleri</title>
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial, sans-serif;
+            }
+    
+            .full-screen-image {
+                background-image: url('https://static.wixstatic.com/media/fd2fb2_1619db7929a7452db0849e7ec44d90da~mv2.png'), url('https://static.wixstatic.com/media/fd2fb2_31495a7e5aee4cb3aa880aadd6f0c13b~mv2.png'); /* Bakgrunnsbilder */
+                background-size: cover;
+                background-position: center, center; /* Plasserer begge bakgrunnsbildene sentrert */
+                height: 100%; /* Full høyde */
+                width: 100%; /* Full bredde */
+                position: absolute; /* Dekk hele skjermen */
+                top: 0;
+                left: 0;
+                z-index: -2; /* Sett begge bildene bak innholdet */
+            }
+
+        .innhold {
+            position: relative; /* For å sikre at innholdet er over bakgrunnen */
+            z-index: 1; /* Sørger for at innholdet vises over bakgrunnen */
+            padding-top: 70px; /* Juster dette tallet for å flytte logoen lenger ned */
+        }
+
+        .min-logo {
+            width: 100%; /* Endre dette til ønsket prosent */
+            height: 100%; /* Beholder proporsjoner */
+            max-width: 400px; /* Setter en maksimal bredde for logoen */
+            left: 2%;
+            position: relative; /* Endret fra absolute til relative */
+           top: -15px;
+        }
+            
+            .watch-button {
+        position: relative; /* Endre til 'absolute' hvis du vil plassere den i forhold til nærmeste posisjonerte element */
+        top: -10px; /* Juster denne verdien for å flytte knappen opp eller ned */
+        left: 90px; /* Startposisjon */
+        display: inline-block;
+        border-radius: 8px;
+    }
+
+    .watch-button img {
+            width: 300px; /* Juster størrelsen på ikonet */
+            height: auto;
+            left: -17; /* Juster denne verdien for å flytte knappen til venstre eller høyre */
+            border: 5px solid none; /* Legger til en 5px hvit grense rundt bildet */
+            border-radius: 4px; /* Valgfritt: rundere hjørnene på grensen */
+        }
+        
+        
+        .tekst {
+    color: white; /* Endrer teksten til hvit */
+    position: relative; /* Setter posisjonen til relativ */
+    left: 50px; /* Flytter teksten 50 piksler til høyre */
+    top: -30px; /* Flytter teksten 30 piksler opp */
+    width: 400px; /* Sett ønsket bredde */
+    border: 1px solid none; /* Ramme rundt teksten */
+    padding: 10px; /* Liten avstand mellom tekst og ramme */
+    overflow-wrap: break-word; /* Bryt ord hvis de er for lange */
+    word-wrap: break-word; /* For eldre nettlesere */
+    background-color: rgba(9, 27, 30, 0.404); 
+    border-radius: 5px; /* Valgfritt: rundere hjørnene på grensen */
+    line-height: 1.8; /* Avstand mellom linjene/setningene */
+        }
+        .fade {
+        position: absolute;
+        top: -100px; /* Juster denne verdien for å flytte faiden nedover */
+        left: 0;
+        right: 0;
+        height: 100px; /* Juster høyden på stripen her */
+        z-index: -1; /* Setter z-indeksen til -1 for å plassere faiden bak */
+    }
+
+        h1 {
+            position: relative;
+            color: black; /* Juster fargen på teksten etter behov */
+            text-align: center;
+            margin-top: 20%;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="full-screen-image"></div> <!-- Bakgrunnsbildet -->
+    <div class="innhold">
+        <img src="c:\Users\svears14\Downloads\480x180 (1).webp" alt="Logo" class="min-logo">
+    </div>
+    <div class="container">
+        <div class="fade"></div>
+        <div class="info">
+            <p class="tekst"></strong style> En prest tar med familien ut til skogen for å opprette et samfunn. Mystiske hendelser skjer etter prestens advarler om å bygge kirken. </p>
+            <a class="watch-button" href="Synderen.film.html">
+                <img src="https://static.wixstatic.com/media/fd2fb2_40fc77f609424d6b89d214318926e4a4~mv2.jpg" alt="Se filmen">
+                
+            </div>
+ </body>
+</html>
